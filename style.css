@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5c9a5; /* Soft pastel peach */
+    margin: 0;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+}
+
+.google-logo {
+    margin-bottom: 20px;
+    filter: brightness(0.9); /* Soft white effect */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    background: #fff;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:hover {
+    border-color: #dfe1e5;
+}
+
+input[type="text"]:focus {
+    border-color: #ffb6c1; /* Light pastel pink */
+    box-shadow: 0 1px 8px rgba(255, 182, 193, 0.6);
+}
+
+.suggestions {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #dfe1e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    text-align: left;
+    top: 48px;
+    z-index: 1000;
+}
+
+.suggestions div {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.suggestions div:hover {
+    background-color: #ffebcd; /* Soft pastel yellow */
+}
+
+.refresh-button {
+    margin-top: 20px;
+    padding: 10px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffdab9; /* Soft pastel orange */
+    color: #3c4043;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.refresh-button:hover {
+    background-color: #ffb6c1; /* Light pastel pink */
+}

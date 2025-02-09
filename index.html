@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Like Auto-Suggest Search</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <div class="search-container">
+        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="200">
+        <input type="text" id="search" placeholder="Search Google or type a URL" onkeyup="fetchSuggestions()">
+        <div id="suggestions" class="suggestions"></div>
+        <button class="refresh-button" onclick="refreshPage()">Refresh</button>
+    </div>
+    
+    <script src="script.js" ></script>
+        
+</body>
+</html>
